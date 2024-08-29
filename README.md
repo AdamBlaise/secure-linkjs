@@ -26,9 +26,22 @@ cd into the securelinkjs directory and run the npm link command, it will create 
   npm link
 ```
 
-After running the command above, navigate to your project directory and within the terminal and type this command
+After running the command above, navigate to your project directory in your terminal and type this command to sync your project with the secure-linkjs library
 ```
   npm link secure-linkjs
 ```
+
+## Features
+
+The secure-linkjs library has several api features built-in which can be used directly within your project.
+- authenticate
+- authorize
+- refresh token
+- hanadle logout
+
+There are additional functions within the library that make up secure-linkjs, this functions includes, token extractor, generate_2fa_code and verify magic link. secure-linkjs was built to integrate conveniently with mongodb as the database of choice. With secure-linkjs all that is required of the developer is to provide the necessary details to handle the transaction, requiring no logic implementation from the developer's end.
+
+## Usage
+
 
 
