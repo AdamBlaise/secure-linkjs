@@ -9,3 +9,6 @@ take full control of the authentication flow. SecurelinkJs has authentication fe
 any developer can easily integrate the library to handle basic authentication and advance level authentication processes without any prior knowledge of building authentication flows,
 securelinkjs was developed with developers in mind, simplifying and reducing the amount of time and lines of code required to implement or integrate an authentication flow in your project, 
 you have to provide SecurelinkJs, with primary criteria for it to be able to handle the login process for you completely.
+
+## Install
+
