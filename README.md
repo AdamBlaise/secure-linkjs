@@ -10,5 +10,10 @@ any developer can easily integrate the library to handle basic authentication an
 securelinkjs was developed with developers in mind, simplifying and reducing the amount of time and lines of code required to implement or integrate an authentication flow in your project, 
 you have to provide SecurelinkJs, with primary criteria for it to be able to handle the login process for you completely.
 
-## Install
+## Installation
+
+```bash
+  git clone 
+```
+
 
