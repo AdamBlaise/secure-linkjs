@@ -12,8 +12,23 @@ you have to provide SecurelinkJs, with primary criteria for it to be able to han
 
 ## Quick Start
 
+To integrate securelinkJs in your project clone the repository and link it to your project
+
 ```bash
-  git clone 
+  git clone https://github.com/AdamBlaise/secure-linkjs.git
+```
+
+cd into the securelinkjs directory and run the npm link command, it will create a link that can be utilized in your project
+
+```
+  cd path/to/secure-linkjs/directory
+
+  npm link
+```
+
+After running the command above, navigate to your project directory and within the terminal and type this command
+```
+  npm link secure-linkjs
 ```
 
 
