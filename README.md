@@ -43,5 +43,36 @@ There are additional functions within the library that make up secure-linkjs, th
 
 ## Usage
 
+```
+This is how you can integrate the process_login function in your project
+
+app.post("/auth/login", async (req, res) => {
+  try {
+    const response = await authenticate.process_login({
+      details: req.body,
+      mongo_uri: process.env.MONGO_URI,
+      collection_name: "users",
+      //redirect_link: "http://localhost:5173/login",
+      user: true,
+      tokenReplay: true,
+      /* enable_2fa: true, */
+      accessToken_secret: process.env.ACCESS_TOKEN_SECRET,
+      refreshToken_secret: process.env.REFRESH_TOKEN_SECRET,
+    });
+
+    if (response.errorCode) {
+      return res.status(response.errorCode).send(response);
+    } else {
+      return res.status(200).send(response);
+    }
+  } catch (error) {
+    return res.status(500).send({
+      errorCode: 500,
+      errorMsg: "We couldn't resolve your problem at this time",
+    });
+  }
+});
+```
+
 
 
