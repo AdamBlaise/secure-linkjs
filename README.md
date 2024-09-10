@@ -41,7 +41,12 @@ The secure-linkjs library has several api features built-in which can be used di
 
 There are additional functions within the library that make up secure-linkjs, this functions includes, token extractor, generate_2fa_code and verify magic link. secure-linkjs was built to integrate conveniently with mongodb as the database of choice. With secure-linkjs all that is required of the developer is to provide the necessary details to handle the transaction, requiring no logic implementation from the developer's end.
 
-# Usage
+## importing the library into your project
+In order to be able to make use of the securelinkjs functions you have to require it within your project module like so
+```
+const { authenticate, authorizer } = require("securelinkjs");
+```
+From the statement above, we have required specific modules from our library, in this case it is the authenticate module and the authorizer module, each of these modules have various functions to handle your authentication process management from login to logout and token invalidation.
 
 ## process_login function
 
